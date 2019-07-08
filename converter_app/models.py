@@ -15,8 +15,8 @@ from PyPDF2 import PdfFileReader
 ALLOWED_FILE_TYPES = ("png", "jpg", "jpeg", "pdf", "txt", "ppt", "pptx", "xls", "xlsx", "doc", "docx")
 FILE_TYPE_CHOICES = (('jpg', 'JPG'), ('png', 'PNG'), ('pdf', 'PDF'), ('txt', 'TXT'), ('ppt', 'PPT'), ('pptx', 'PPTX'),
                      ('doc', 'DOC'), ('docx', 'DOCX'), ('XLS', 'XLS'), ('xlsx', 'XLSX'))
-INPUT_FILES_PATH = "files/input_files"
-CONVERTED_FILES_PATH = "files/converted_files"
+INPUT_FILES_PATH = "files/input_files/"
+CONVERTED_FILES_PATH = "files/converted_files/"
 MEDIA_PATH = settings.MEDIA_ROOT
 SITE_DOMAIN = "http://127.0.0.1:8000/"
 SITE_DOMAIN_NAKED = "http://127.0.0.1:8000"

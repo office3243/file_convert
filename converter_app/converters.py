@@ -9,7 +9,8 @@ def pdf_converter(file):
         file.converted_file = file.input_file
         file.save()
         return True
-    except:
+    except Exception as e:
+        print(e)
         return False
 
 
@@ -31,6 +32,7 @@ def jpg_converter(file):
 def png_converter(file):
     try:
         png_path = file.input_file.path
+        print(png_path)
         png = Image.open(png_path)
         jpg_path = file.get_jpg_path_temp
         rgb_im = png.convert('RGB')
