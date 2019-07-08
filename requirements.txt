@@ -1,1 +1,6 @@
 django==2
+pillow
+requests
+img2pdf
+text2pdf
+PyPDF2
